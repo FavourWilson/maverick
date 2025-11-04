@@ -1,0 +1,6 @@
+services:
+  - type: web
+    runtime: python
+    name: maverick
+    startCommand: cd /opt/render/project && gunicorn app:app
+    buildCommand: pip install -r requirements.txt
