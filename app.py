@@ -5,7 +5,8 @@ from wtforms import SelectField
 from brownie import accounts, Contract, network
 from dotenv import load_dotenv
 load_dotenv()
-
+print("CWD:", os.getcwd())
+print("Files:", os.listdir(os.getcwd()))
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "MAVERICKS"
