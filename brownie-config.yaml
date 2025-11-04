@@ -1,14 +1,17 @@
 dependencies:
   - OpenZeppelin/openzeppelin-contracts@4.2.0
+
 compiler:
   solc:
     remappings:
-      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0'
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0"
 
 dotenv: .env
 
 networks:
   default: development
-  arbitrum-sepolia:
-    host: https://arb-sepolia.g.alchemy.com/v2/6U4sY8Dh2UK8Mna29gNCz
-    chainid: 421614
+  live:
+    arbitrum-sepolia:
+      host: https://arb-sepolia.g.alchemy.com/v2/6U4sY8Dh2UK8Mna29gNCz
+      chainid: 421614
+      explorer: https://sepolia.arbiscan.io
