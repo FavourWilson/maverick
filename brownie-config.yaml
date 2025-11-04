@@ -10,8 +10,7 @@ dotenv: .env
 
 networks:
   default: development
-  live:
-    arbitrum-sepolia:
-      host: https://arb-sepolia.g.alchemy.com/v2/6U4sY8Dh2UK8Mna29gNCz
-      chainid: 421614
-      explorer: https://sepolia.arbiscan.io
+  arbitrum-sepolia:
+    host: https://arb-sepolia.g.alchemy.com/v2/6U4sY8Dh2UK8Mna29gNCz
+    chainid: 421614
+    explorer: https://sepolia.arbiscan.io
